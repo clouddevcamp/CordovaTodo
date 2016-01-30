@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>CloudDevCamp.Cordova.ToDo</title>
+
+    <!-- CloudDevCamp.Cordova.ToDo references -->
+    <link href="css/all.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+      <a class="logo" href="index.html">
+        <img src="images/logo-full.png" />
+      </a>
+    </div>
+    <div class="content" id="content">
+
+    </div>
+    <div class="modal" id="modalNewItem">
+      <div class="container">
+        <div class="box">
+          <a class="hide-btn" id="btnHideNewItemModal"></a>
+          <input id="txtNewItemContent" type="text" placeholder="İçerik" class="form-control" />
+          <button id="btnAddItem" class="btn">Ekle</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a class="add-btn" id="btnNewItem"></a>
+    </div>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/jquery-1.12.0.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
